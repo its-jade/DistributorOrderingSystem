@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dabb091a-9dfd-48ce-9059-3294adc301ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/add-new-customer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/add-new-customer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/completed-order-screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/completed-order-screen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/customer-list.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/customer-list.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/home-screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/home-screen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/login-screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/login-screen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/new-order.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/new-order.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +44,9 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "jade",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Jade/Documents/School/2024 Summer/DistributorOrderingSystem",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
