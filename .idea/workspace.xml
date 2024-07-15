@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dabb091a-9dfd-48ce-9059-3294adc301ec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/AddNewCustomerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/AddNewCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/AddNewCustomerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/add-new-customer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/add-new-customer.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

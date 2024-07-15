@@ -8,7 +8,7 @@ import org.w3c.dom.Text;
 
 public class AddNewCustomerController {
 
-    ObservableList<String> paymentMethodList = FXCollections.observableArrayList("Select One","Cash","Credit Card","Check","Wire Transfer", "Other");
+    ObservableList<String> paymentMethodList = FXCollections.observableArrayList("Cash","Credit Card","Check","Wire Transfer", "Other");
 
     // buttons
     @FXML

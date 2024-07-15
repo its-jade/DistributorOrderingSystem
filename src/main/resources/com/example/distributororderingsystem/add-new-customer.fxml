@@ -21,21 +21,33 @@
    <bottom>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="submitButton" layoutX="758.0" layoutY="35.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-radius: 15;" text="Submit" />
-            <Button fx:id="cancelButton" alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-radius: 15;" text="Cancel" />
+            <Button fx:id="submitButton" layoutX="758.0" layoutY="35.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-radius: 15;" text="Submit">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button fx:id="cancelButton" alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-radius: 15;" text="Cancel">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
          </children>
       </HBox>
    </bottom>
    <top>
       <ToolBar prefHeight="100.0" prefWidth="200.0">
         <items>
-          <Button fx:id="homeButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-radius: 15;" text="Home" translateX="20.0" />
+          <Button fx:id="homeButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-radius: 15;" text="Home" translateX="20.0">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
             <Label text="New Customer Form" translateX="690.0">
                <font>
                   <Font size="36.0" />
                </font>
             </Label>
-            <Button fx:id="saveButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-radius: 15;" text="Save" translateX="1350.0" />
+            <Button fx:id="saveButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-radius: 15;" text="Save" translateX="1350.0">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
         </items>
          <BorderPane.margin>
             <Insets />
@@ -212,7 +224,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextArea>
-                        <ComboBox fx:id="paymentMethodBox" prefHeight="42.0" prefWidth="488.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <ComboBox fx:id="paymentMethodBox" prefHeight="42.0" prefWidth="488.0" promptText="Select One" style="-fx-background-radius: 15;" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <GridPane.margin>
                               <Insets bottom="10.0" left="15.0" right="10.0" top="10.0" />
                            </GridPane.margin>
