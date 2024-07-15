@@ -2,19 +2,30 @@ package com.example.distributororderingsystem;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class Main extends Application {
+
+    Stage window;
+    Scene login, home, addNewCustomer, customerList, completedOrder, newOrder;
+
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
-        stage.setScene(scene);
-        stage.show();
+        window = stage;
+
+        Parent root = FXMLLoader.load(getClass().getResource("add-new-customer.fxml"));
+        Scene scene = new Scene(root);
+        window.setScene(scene);
+        window.show();
+//        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("login-screen.fxml"));
+//        Scene scene = new Scene(fxmlLoader.load(), 1600, 2560);
+//        window.setTitle("Acme Distributing");
+//        window.setScene(login);
+//        window.show();
     }
 
     public static void main(String[] args) {
