@@ -17,8 +17,9 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         window = stage;
 
-        Parent root = FXMLLoader.load(getClass().getResource("add-new-customer.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("login-screen.fxml"));
         Scene scene = new Scene(root);
+        window.setTitle("Acme Distributing");
         window.setScene(scene);
         window.show();
 //        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("login-screen.fxml"));

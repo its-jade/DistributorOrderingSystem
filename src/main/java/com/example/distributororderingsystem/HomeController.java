@@ -1,14 +1,17 @@
 package com.example.distributororderingsystem;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 public class HomeController {
+    // buttons
     @FXML
-    private Label welcomeText;
-
+    private Button customerListButton;
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
-    }
+    private Button newOrderButton;
+    @FXML
+    private Button orderListButton;
+    @FXML
+    private Button logoutButton;
 }
