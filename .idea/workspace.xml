@@ -6,11 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="dabb091a-9dfd-48ce-9059-3294adc301ec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/AddNewCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/AddNewCustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/CompletedOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/CompletedOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/CustomerListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/CustomerListController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/NewOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/NewOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/completed-order-screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/completed-order-screen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/customer-list.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/customer-list.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/hello-view.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/home-screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/home-screen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/login-screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/login-screen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/new-order.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/new-order.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +67,26 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.distributororderingsystem" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.distributororderingsystem.Main" />
+      <module name="DistributorOrderingSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.distributororderingsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

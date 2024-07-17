@@ -2,13 +2,20 @@ package com.example.distributororderingsystem;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import org.w3c.dom.Text;
 
-public class AddNewCustomerController {
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-    ObservableList<String> paymentMethodList = FXCollections.observableArrayList("Cash","Credit Card","Check","Wire Transfer", "Other");
+public class AddNewCustomerController implements Initializable {
+
+    ObservableList<String> paymentMethodList = FXCollections.observableArrayList("Cash","EBT","Fintech");
 
     // buttons
     @FXML
@@ -52,5 +59,34 @@ public class AddNewCustomerController {
     private void initialize() {
         paymentMethodBox.setValue("Select One");
         paymentMethodBox.setItems(paymentMethodList);
+    }
+
+
+    // methods for button functionality
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+        homeButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event)   {
+                try {
+                    Controller.changeScene(event, "home-screen.fxml");
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        cancelButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event)   {
+                try {
+                    Controller.changeScene(event, "customer-list.fxml");
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
     }
 }

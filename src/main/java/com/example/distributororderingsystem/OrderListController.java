@@ -5,17 +5,17 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class CustomerListController implements Initializable {
+public class OrderListController implements Initializable {
     @FXML
     private Button homeButton;
+
     @FXML
-    private Button addNewCustomerButton;
+    private Button newOrderButton;
 
     // methods for button functionality
     @Override
@@ -32,11 +32,11 @@ public class CustomerListController implements Initializable {
             }
         });
 
-        addNewCustomerButton.setOnAction(new EventHandler<ActionEvent>() {
+        newOrderButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event)   {
                 try {
-                    Controller.changeScene(event, "add-new-customer.fxml");
+                    Controller.changeScene(event, "new-order.fxml");
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }

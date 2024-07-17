@@ -16,9 +16,9 @@
    <top>
       <ToolBar prefHeight="100.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <items>
-            <Label text="Home Page" translateX="850.0">
+            <Label text="Home Page" translateX="860.0">
                <font>
-                  <Font name="System Bold" size="36.0" />
+                  <Font size="36.0" />
                </font>
             </Label>
          </items>

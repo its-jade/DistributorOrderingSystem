@@ -10,23 +10,17 @@ import java.io.IOException;
 
 public class Main extends Application {
 
-    Stage window;
-    Scene login, home, addNewCustomer, customerList, completedOrder, newOrder;
+    Stage stage;
 
     @Override
     public void start(Stage stage) throws IOException {
-        window = stage;
+        this.stage = stage;
 
         Parent root = FXMLLoader.load(getClass().getResource("login-screen.fxml"));
         Scene scene = new Scene(root);
-        window.setTitle("Acme Distributing");
-        window.setScene(scene);
-        window.show();
-//        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("login-screen.fxml"));
-//        Scene scene = new Scene(fxmlLoader.load(), 1600, 2560);
-//        window.setTitle("Acme Distributing");
-//        window.setScene(login);
-//        window.show();
+        this.stage.setTitle("Acme Distributing");
+        this.stage.setScene(scene);
+        this.stage.show();
     }
 
     public static void main(String[] args) {

@@ -13,55 +13,15 @@ import java.io.IOException;
 
 public class Controller {
 
-    private Stage window;
-    private Scene scene;
-    private Parent root;
+    // method for switching to a new scene
+    public static void changeScene(javafx.event.ActionEvent event, String fxmlFile) throws IOException{
+        Parent root = null;
 
-    public void switchToHome(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("home-screen.fxml"));
-        window = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        window.setScene(scene);
-        window.show();
-    }
+        root = FXMLLoader.load(Controller.class.getResource(fxmlFile));
 
-    public void switchToCustomerList(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("customer-list.fxml"));
-        window = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        window.setScene(scene);
-        window.show();
-    }
-
-    public void switchToAddNewCustomer(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("add-new-customer.fxml"));
-        window = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        window.setScene(scene);
-        window.show();
-    }
-
-    public void switchToNewOrder(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("new-order.fxml"));
-        window = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        window.setScene(scene);
-        window.show();
-    }
-
-    public void switchToCompleteOrder(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("competed-order-screen.fxml"));
-        window = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        window.setScene(scene);
-        window.show();
-    }
-
-    @FXML
-    private Label welcomeText;
-
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Acme Distributing");
+        stage.setScene(new Scene(root, 1920,1200));
+        stage.show();
     }
 }
