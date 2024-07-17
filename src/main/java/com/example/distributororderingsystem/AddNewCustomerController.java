@@ -55,16 +55,12 @@ public class AddNewCustomerController implements Initializable {
     @FXML
     private ComboBox paymentMethodBox;
 
-    @FXML
-    private void initialize() {
-        paymentMethodBox.setValue("Select One");
-        paymentMethodBox.setItems(paymentMethodList);
-    }
-
 
     // methods for button functionality
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        paymentMethodBox.setValue("Select One");
+        paymentMethodBox.setItems(paymentMethodList);
 
         homeButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
