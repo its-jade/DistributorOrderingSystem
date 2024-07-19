@@ -5,29 +5,25 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableView;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class CustomerListController implements Initializable {
-    // buttons for Customer List Screen
+public class OrderConfirmationController implements Initializable {
+    // buttons
     @FXML
     private Button homeButton;
+    @FXML
+    private Button customerListButton;
     @FXML
     private Button orderListButton;
     @FXML
     private Button inventoryButton;
     @FXML
     private Button logoutButton;
-    @FXML
-    private Button newCustomerButton;
 
-    // table for Customer List Screen
-    @FXML
-    private TableView<String> customersTable;
+
 
     // methods for button functionality
     @Override
@@ -38,6 +34,17 @@ public class CustomerListController implements Initializable {
             public void handle(ActionEvent event)   {
                 try {
                     Controller.changeScene(event, "dashboard-screen.fxml");
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        customerListButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event)   {
+                try {
+                    Controller.changeScene(event, "customer-list-screen.fxml");
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
@@ -71,17 +78,6 @@ public class CustomerListController implements Initializable {
             public void handle(ActionEvent event)   {
                 try {
                     Controller.changeScene(event, "login-screen.fxml");
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
-            }
-        });
-
-        newCustomerButton.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event)   {
-                try {
-                    Controller.changeScene(event, "add-new-customer-screen.fxml");
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }

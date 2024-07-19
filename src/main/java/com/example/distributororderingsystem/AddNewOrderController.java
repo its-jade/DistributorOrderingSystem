@@ -5,17 +5,18 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableView;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class CustomerListController implements Initializable {
-    // buttons for Customer List Screen
+public class AddNewOrderController implements Initializable {
+
+    // buttons
     @FXML
     private Button homeButton;
+    @FXML
+    private Button customerListButton;
     @FXML
     private Button orderListButton;
     @FXML
@@ -23,21 +24,24 @@ public class CustomerListController implements Initializable {
     @FXML
     private Button logoutButton;
     @FXML
-    private Button newCustomerButton;
-
-    // table for Customer List Screen
+    private Button saveButton;
     @FXML
-    private TableView<String> customersTable;
+    private Button cancelButton;
+
+
+
+
+
 
     // methods for button functionality
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        homeButton.setOnAction(new EventHandler<ActionEvent>() {
+        customerListButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event)   {
                 try {
-                    Controller.changeScene(event, "dashboard-screen.fxml");
+                    Controller.changeScene(event, "customer-list-screen.fxml");
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
@@ -77,11 +81,24 @@ public class CustomerListController implements Initializable {
             }
         });
 
-        newCustomerButton.setOnAction(new EventHandler<ActionEvent>() {
+        // implement a saveButton method - save to a file
+        saveButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event)   {
                 try {
-                    Controller.changeScene(event, "add-new-customer-screen.fxml");
+                    Controller.changeScene(event, "order-confirmation-screen.fxml");
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+
+        cancelButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event)   {
+                try {
+                    Controller.changeScene(event, "customer-list-screen.fxml");
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }

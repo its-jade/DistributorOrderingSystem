@@ -21,9 +21,15 @@ public class AddNewCustomerController implements Initializable {
     @FXML
     private Button homeButton;
     @FXML
-    private Button saveButton;
+    private Button customerListButton;
     @FXML
-    private Button submitButton;
+    private Button orderListButton;
+    @FXML
+    private Button inventoryButton;
+    @FXML
+    private Button logoutButton;
+    @FXML
+    private Button saveButton;
     @FXML
     private Button cancelButton;
 
@@ -66,18 +72,75 @@ public class AddNewCustomerController implements Initializable {
             @Override
             public void handle(ActionEvent event)   {
                 try {
-                    Controller.changeScene(event, "home-screen.fxml");
+                    Controller.changeScene(event, "dashboard-screen.fxml");
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
             }
         });
 
+        customerListButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event)   {
+                try {
+                    Controller.changeScene(event, "customer-list-screen.fxml");
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        orderListButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event)   {
+                try {
+                    Controller.changeScene(event, "order-list-screen.fxml");
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        inventoryButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event)   {
+                try {
+                    Controller.changeScene(event, "inventory-screen.fxml");
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        logoutButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event)   {
+                try {
+                    Controller.changeScene(event, "login-screen.fxml");
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        // implement a saveButton method - save to a file
+        saveButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event)   {
+                try {
+                    Controller.changeScene(event, "view-customer-screen.fxml");
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+
         cancelButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event)   {
                 try {
-                    Controller.changeScene(event, "customer-list.fxml");
+                    Controller.changeScene(event, "customer-list-screen.fxml");
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }

@@ -20,8 +20,17 @@ public class Controller {
         root = FXMLLoader.load(Controller.class.getResource(fxmlFile));
 
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+        // takes in the width and height of current window
+        double currentWidth = stage.getWidth();
+        double currentHeight = stage.getHeight();
+
         stage.setTitle("Acme Distributing");
-        stage.setScene(new Scene(root, 1920,1200));
+
+        Scene newScene = new Scene(root, currentWidth, currentHeight);
+
+        stage.setScene(newScene);
+
         stage.show();
     }
 }

@@ -40,7 +40,7 @@ public class LoginController implements Initializable {
             @Override
             public void handle(ActionEvent event)   {
                 try {
-                    Controller.changeScene(event, "home-screen.fxml");
+                    Controller.changeScene(event, "dashboard-screen.fxml");
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
