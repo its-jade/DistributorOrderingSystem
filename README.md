@@ -16,10 +16,10 @@ This project is a standalone desktop application designed for sales representati
 ## Project Structure
 
 - `src/main/java/com/example/distributororderingsystem`: Contains Java source files.
-  - `Controller`: Contains controllers for handling UI interactions.
-  - `Model`: Contains classes for Customer, Order, and Inventory.
-  - `View`: Contains FXML files for the UI layout.
+  - : Contains controllers for handling UI interactions.
+  - : Contains classes for Customer, Order, and Inventory.
 - `src/main/resources/com/example/distributororderingsystem`: Contains FXML and CSS files.
+  - : Contains FXML files for the UI layout.
 - `data`: Directory for storing JSON files (customers.json, orders.json, inventory.json).
 
 ## Using the Application
