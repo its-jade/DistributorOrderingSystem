@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dabb091a-9dfd-48ce-9059-3294adc301ec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/data/customers.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/inventory.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/orders.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/AddNewOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/AddNewOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/dashboard-screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/dashboard-screen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
