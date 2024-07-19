@@ -98,7 +98,7 @@ public class AddNewOrderController implements Initializable {
             @Override
             public void handle(ActionEvent event)   {
                 try {
-                    Controller.changeScene(event, "customer-list-screen.fxml");
+                    Controller.changeScene(event, "order-list-screen.fxml");
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }

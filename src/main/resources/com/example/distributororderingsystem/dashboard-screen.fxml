@@ -110,9 +110,9 @@
                 </HBox>
                 <TableView fx:id="recentOrderTable">
                     <columns>
+                        <TableColumn editable="false" prefWidth="200.0" text="Order Number" />
                         <TableColumn prefWidth="200.0" text="Account ID" />
                         <TableColumn prefWidth="200.0" text="Delivery Rep ID" />
-                        <TableColumn editable="false" prefWidth="200.0" text="Order Number" />
                         <TableColumn prefWidth="200.0" text="Delivery Date" />
                     </columns>
                     <VBox.margin>
