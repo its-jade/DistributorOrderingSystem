@@ -1,20 +1,23 @@
 package com.example.distributororderingsystem;
 
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.*;
-
-import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 
 public class AddNewCustomerController implements Initializable {
 
-    ObservableList<String> paymentMethodList = FXCollections.observableArrayList("Cash","EBT","Fintech");
+    ObservableList<String> paymentMethodList =
+            FXCollections.observableArrayList("Cash", "EBT", "Fintech");
 
     // buttons
     @FXML
@@ -69,7 +72,7 @@ public class AddNewCustomerController implements Initializable {
 
         homeButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event)   {
+            public void handle(ActionEvent event) {
                 try {
                     Controller.changeScene(event, "dashboard-screen.fxml");
                 } catch (IOException e) {
@@ -80,7 +83,7 @@ public class AddNewCustomerController implements Initializable {
 
         customerListButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event)   {
+            public void handle(ActionEvent event) {
                 try {
                     Controller.changeScene(event, "customer-list-screen.fxml");
                 } catch (IOException e) {
@@ -91,7 +94,7 @@ public class AddNewCustomerController implements Initializable {
 
         orderListButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event)   {
+            public void handle(ActionEvent event) {
                 try {
                     Controller.changeScene(event, "order-list-screen.fxml");
                 } catch (IOException e) {
@@ -102,7 +105,7 @@ public class AddNewCustomerController implements Initializable {
 
         inventoryButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event)   {
+            public void handle(ActionEvent event) {
                 try {
                     Controller.changeScene(event, "inventory-screen.fxml");
                 } catch (IOException e) {
@@ -113,7 +116,7 @@ public class AddNewCustomerController implements Initializable {
 
         logoutButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event)   {
+            public void handle(ActionEvent event) {
                 try {
                     Controller.changeScene(event, "login-screen.fxml");
                 } catch (IOException e) {
@@ -125,7 +128,7 @@ public class AddNewCustomerController implements Initializable {
         // implement a saveButton method - save to a file
         saveButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event)   {
+            public void handle(ActionEvent event) {
                 try {
                     Controller.changeScene(event, "view-customer-screen.fxml");
                 } catch (IOException e) {
@@ -137,7 +140,7 @@ public class AddNewCustomerController implements Initializable {
 
         cancelButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event)   {
+            public void handle(ActionEvent event) {
                 try {
                     Controller.changeScene(event, "customer-list-screen.fxml");
                 } catch (IOException e) {

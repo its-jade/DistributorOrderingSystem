@@ -1,14 +1,13 @@
 package com.example.distributororderingsystem;
 
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-
-import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
 public class OrderListController implements Initializable {
     @FXML
@@ -28,7 +27,7 @@ public class OrderListController implements Initializable {
 
         homeButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event)   {
+            public void handle(ActionEvent event) {
                 try {
                     Controller.changeScene(event, "dashboard-screen.fxml");
                 } catch (IOException e) {
@@ -39,7 +38,7 @@ public class OrderListController implements Initializable {
 
         customerListButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event)   {
+            public void handle(ActionEvent event) {
                 try {
                     Controller.changeScene(event, "customer-list-screen.fxml");
                 } catch (IOException e) {
@@ -50,7 +49,7 @@ public class OrderListController implements Initializable {
 
         inventoryButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event)   {
+            public void handle(ActionEvent event) {
                 try {
                     Controller.changeScene(event, "inventory-screen.fxml");
                 } catch (IOException e) {
@@ -61,7 +60,7 @@ public class OrderListController implements Initializable {
 
         logoutButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event)   {
+            public void handle(ActionEvent event) {
                 try {
                     Controller.changeScene(event, "login-screen.fxml");
                 } catch (IOException e) {
@@ -72,7 +71,7 @@ public class OrderListController implements Initializable {
 
         newOrderButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event)   {
+            public void handle(ActionEvent event) {
                 try {
                     Controller.changeScene(event, "add-new-order-screen.fxml");
                 } catch (IOException e) {

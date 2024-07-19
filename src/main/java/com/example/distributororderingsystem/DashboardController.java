@@ -1,5 +1,8 @@
 package com.example.distributororderingsystem;
 
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -7,24 +10,20 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
 
-import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
-
 public class DashboardController implements Initializable {
     // buttons
-   @FXML
-   private Button customerListButton;
-   @FXML
-   private Button orderListButton;
-   @FXML
-   private Button inventoryButton;
-   @FXML
-   private Button logoutButton;
-   @FXML
-   private Button newOrderButton;
-   @FXML
-   private Button newCustomerButton;
+    @FXML
+    private Button customerListButton;
+    @FXML
+    private Button orderListButton;
+    @FXML
+    private Button inventoryButton;
+    @FXML
+    private Button logoutButton;
+    @FXML
+    private Button newOrderButton;
+    @FXML
+    private Button newCustomerButton;
 
     @FXML
     private TableView<String> recentOrderTable;
@@ -36,7 +35,7 @@ public class DashboardController implements Initializable {
 
         customerListButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event)   {
+            public void handle(ActionEvent event) {
                 try {
                     Controller.changeScene(event, "customer-list-screen.fxml");
                 } catch (IOException e) {
@@ -47,7 +46,7 @@ public class DashboardController implements Initializable {
 
         orderListButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event)   {
+            public void handle(ActionEvent event) {
                 try {
                     Controller.changeScene(event, "order-list-screen.fxml");
                 } catch (IOException e) {
@@ -58,7 +57,7 @@ public class DashboardController implements Initializable {
 
         inventoryButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event)   {
+            public void handle(ActionEvent event) {
                 try {
                     Controller.changeScene(event, "inventory-screen.fxml");
                 } catch (IOException e) {
@@ -69,7 +68,7 @@ public class DashboardController implements Initializable {
 
         logoutButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event)   {
+            public void handle(ActionEvent event) {
                 try {
                     Controller.changeScene(event, "login-screen.fxml");
                 } catch (IOException e) {
@@ -80,7 +79,7 @@ public class DashboardController implements Initializable {
 
         newOrderButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event)   {
+            public void handle(ActionEvent event) {
                 try {
                     Controller.changeScene(event, "add-new-order-screen.fxml");
                 } catch (IOException e) {
@@ -91,7 +90,7 @@ public class DashboardController implements Initializable {
 
         newCustomerButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event)   {
+            public void handle(ActionEvent event) {
                 try {
                     Controller.changeScene(event, "add-new-customer-screen.fxml");
                 } catch (IOException e) {
