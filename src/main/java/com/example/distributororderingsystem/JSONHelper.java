@@ -9,11 +9,11 @@ import java.util.List;
 
 
 public class JSONHelper {
-    private static final String FILE_PATH = "orders.json";
+    private static final String filePath = "orders.json";
     private static ObjectMapper mapper = new ObjectMapper();
 
     public static List<Order> readOrders() throws IOException {
-        File file = new File(FILE_PATH);
+        File file = new File(filePath);
         if (file.exists()) {
             return mapper.readValue(file, new TypeReference<List<Order>>(){});
         } else {
@@ -21,6 +21,6 @@ public class JSONHelper {
         }
     }
     public static void writeOrders(List<Order> orders) throws IOException {
-        mapper.writeValue(new File(FILE_PATH), orders);
+        mapper.writeValue(new File(filePath), orders);
     }
 }
