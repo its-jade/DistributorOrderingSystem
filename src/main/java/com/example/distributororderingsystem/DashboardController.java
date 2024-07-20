@@ -51,10 +51,13 @@ public class DashboardController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
         // Order Table Functionality Section
+        /* Currently commended out as it breaks the login screen
+
         accountIDColumn.setCellValueFactory(new PropertyValueFactory<>("accountID"));
         deliveryRepIDColumn.setCellValueFactory(new PropertyValueFactory<>("deliveryRepID"));
         orderNumberColumn.setCellValueFactory(new PropertyValueFactory<>("orderNumber"));
         deliveryDateColumn.setCellValueFactory(new PropertyValueFactory<>("deliveryDate"));
+
 
         try {
             List<Order> orders = JSONHelper.readOrders();
@@ -65,7 +68,7 @@ public class DashboardController implements Initializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+*/
 
         // Button section
         customerListButton.setOnAction(new EventHandler<ActionEvent>() {
