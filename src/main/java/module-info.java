@@ -4,6 +4,7 @@ module com.example.distributororderingsystem {
 
     requires com.dlsc.formsfx;
     requires java.desktop;
+    requires com.fasterxml.jackson.databind;
 
     opens com.example.distributororderingsystem to javafx.fxml;
     exports com.example.distributororderingsystem;

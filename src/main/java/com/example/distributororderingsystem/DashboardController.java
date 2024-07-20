@@ -3,12 +3,19 @@ package com.example.distributororderingsystem;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class DashboardController implements Initializable {
     // buttons
@@ -25,14 +32,42 @@ public class DashboardController implements Initializable {
     @FXML
     private Button newCustomerButton;
 
+    // Recent Order Table
     @FXML
-    private TableView<String> recentOrderTable;
+    private TableView<Order> recentOrderTable;
+    @FXML
+    private TableColumn<Order, String> accountIDColumn;
+    @FXML
+    private TableColumn<Order, String> deliveryRepIDColumn;
+    @FXML
+    private TableColumn<Order, String> orderNumberColumn;
+    @FXML
+    private TableColumn<Order, String> deliveryDateColumn;
 
 
     // methods for button functionality
+    // adding methods for Order Table functionality
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
+        // Order Table Functionality Section
+        accountIDColumn.setCellValueFactory(new PropertyValueFactory<>("accountID"));
+        deliveryRepIDColumn.setCellValueFactory(new PropertyValueFactory<>("deliveryRepID"));
+        orderNumberColumn.setCellValueFactory(new PropertyValueFactory<>("orderNumber"));
+        deliveryDateColumn.setCellValueFactory(new PropertyValueFactory<>("deliveryDate"));
+
+        try {
+            List<Order> orders = JSONHelper.readOrders();
+            Collections.sort(orders, Comparator.comparing(Order::getDeliveryDate));
+            ObservableList<Order> data = FXCollections.observableArrayList(orders.subList(0, Math.min(10,
+                    orders.size())));
+            recentOrderTable.setItems(data);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        // Button section
         customerListButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
