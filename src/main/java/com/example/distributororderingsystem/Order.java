@@ -42,7 +42,7 @@ public class Order {
      public void addItem(String itemID) {
         /*
         placeholder for actual item retrieval
-        Item item = Item.fetchItemFromDatabase(itemID);
+        InventoryItem item = Item.fetchItemFromDatabase(itemID);
         this.itemList.add(item);
         */
         }
