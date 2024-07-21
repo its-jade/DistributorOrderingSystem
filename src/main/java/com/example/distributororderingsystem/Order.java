@@ -8,13 +8,13 @@ public class Order {
     private String deliveryDate;
     private String salesRepID;
     private String deliveryRepID;
-    private List<Item> itemList;
+    private List<InventoryItem> itemList;
     private String status;
 
     public Order() {
         this.itemList = new ArrayList<>();
     }
-    public Order(String accountID, String deliveryDate, String salesRepID, String deliveryRepID, List<Item> itemList) {
+    public Order(String accountID, String deliveryDate, String salesRepID, String deliveryRepID, List<InventoryItem> itemList) {
         this.accountID = accountID;
         this.deliveryDate = deliveryDate;
         this.salesRepID = salesRepID;
@@ -33,7 +33,7 @@ public class Order {
     public String getDeliveryRepID() {
         return deliveryRepID;
     }
-    public List<Item> getItemList() {
+    public List<InventoryItem> getItemList() {
         return itemList;
     }
     public String getStatus() {
@@ -56,7 +56,7 @@ public class Order {
     public void submitOrder() {
         this.status = "submitted";
     }
-    public List<Item> getItems() {
+    public List<InventoryItem> getItems() {
         return itemList;
     }
 }
