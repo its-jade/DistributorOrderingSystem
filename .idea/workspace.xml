@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dabb091a-9dfd-48ce-9059-3294adc301ec" name="Changes" comment="" />
+    <list default="true" id="dabb091a-9dfd-48ce-9059-3294adc301ec" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/inventory.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/inventory.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/AddNewCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/AddNewCustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/AddNewOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/AddNewOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/CustomerListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/CustomerListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/InventoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/InventoryItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/InventoryItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/OrderListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/OrderListController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

@@ -79,6 +79,5 @@ public class OrderListController implements Initializable {
                 }
             }
         });
-
     }
 }

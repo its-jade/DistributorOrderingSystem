@@ -1,5 +1,11 @@
 package com.example.distributororderingsystem;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.core.type.TypeReference;
+import java.io.File;
+import java.io.IOException;
+import java.util.Map;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,14 +45,12 @@ public class Order {
     public String getStatus() {
         return status;
     }
-     public void addItem(String itemID) {
-        /*
-        placeholder for actual item retrieval
-        InventoryItem item = Item.fetchItemFromDatabase(itemID);
-        this.itemList.add(item);
-        */
+    public void addItem(String productID) {
+        InventoryItem item = InventoryItem.fetchItemFromInventoryDatabase(productID);
+        if (item != null) {
+            this.itemList.add(item);
         }
-
+        }
 
     //submitOrder is probably where the Writer needs to go to print out the completed order.
 
@@ -59,4 +63,15 @@ public class Order {
     public List<InventoryItem> getItems() {
         return itemList;
     }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "accountID='" + accountID + '\'' +
+                ", deliveryDate='" + deliveryDate + '\'' +
+                ", salesRepID='" + salesRepID + '\'' +
+                ", deliveryRepID='" + deliveryRepID + '\'' +
+                ", itemList=" + itemList +
+                ", status='" + status + '\'' +
+                '}';
 }

@@ -81,9 +81,5 @@ public class InventoryController implements Initializable {
                 }
             }
         });
-
-
-
     }
-
 }
