@@ -20,6 +20,7 @@ public class Order {
     public Order() {
         this.itemList = new ArrayList<>();
     }
+
     public Order(String accountID, String deliveryDate, String salesRepID, String deliveryRepID, List<InventoryItem>
             itemList) {
         this.accountID = accountID;
@@ -28,39 +29,48 @@ public class Order {
         this.deliveryRepID = deliveryRepID;
         this.itemList = itemList;
     }
+
     public String getAccountID() {
         return accountID;
     }
+
     public String getDeliveryDate() {
         return deliveryDate;
     }
+
     public String getSalesRepID() {
         return salesRepID;
     }
+
     public String getDeliveryRepID() {
         return deliveryRepID;
     }
+
     public List<InventoryItem> getItemList() {
         return itemList;
     }
+
     public String getStatus() {
         return status;
     }
+
     public void addItem(String productID) {
         InventoryItem item = InventoryItem.fetchItemFromInventoryDatabase(productID);
         if (item != null) {
             this.itemList.add(item);
         }
-        }
+    }
 
     //submitOrder is probably where the Writer needs to go to print out the completed order.
 
     public void confirmOrder() {
         this.status = "Confirmed";
     }
+
     public void submitOrder() {
         this.status = "submitted";
     }
+
     public List<InventoryItem> getItems() {
         return itemList;
     }
@@ -75,4 +85,5 @@ public class Order {
                 ", itemList=" + itemList +
                 ", status='" + status + '\'' +
                 '}';
+    }
 }
