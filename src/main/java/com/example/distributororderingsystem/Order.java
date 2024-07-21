@@ -20,7 +20,8 @@ public class Order {
     public Order() {
         this.itemList = new ArrayList<>();
     }
-    public Order(String accountID, String deliveryDate, String salesRepID, String deliveryRepID, List<InventoryItem> itemList) {
+    public Order(String accountID, String deliveryDate, String salesRepID, String deliveryRepID, List<InventoryItem>
+            itemList) {
         this.accountID = accountID;
         this.deliveryDate = deliveryDate;
         this.salesRepID = salesRepID;
