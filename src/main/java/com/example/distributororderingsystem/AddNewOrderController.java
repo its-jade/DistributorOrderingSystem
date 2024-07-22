@@ -3,7 +3,6 @@ package com.example.distributororderingsystem;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -60,7 +59,6 @@ public class AddNewOrderController implements Initializable {
         quantityColumn.setCellValueFactory(new PropertyValueFactory<>("onHand"));
         itemList = FXCollections.observableArrayList(InventoryItemsList.generateInventoryItems());
         itemsTableView.setItems(itemList);
-
         customerListButton.setOnAction(event -> {
             try {
                 Controller.changeScene(event, "customer-list-screen.fxml");
