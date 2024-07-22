@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dabb091a-9dfd-48ce-9059-3294adc301ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/CustomerJSONHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/customers.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/customers.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/CustomerListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/distributororderingsystem/CustomerListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/customer-list-screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/distributororderingsystem/customer-list-screen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +57,13 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.distributororderingsystem" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Matthew.Matthew-PC\Desktop\College\Year 1\Semester 3\SWE 3313\Project\DistributorOrderingSystem\data" />
+      <recent name="C:\Users\Matthew.Matthew-PC\Desktop\College\Year 1\Semester 3\SWE 3313\Project\DistributorOrderingSystem\src\main\java\com\example\distributororderingsystem" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.distributororderingsystem" />
     </key>
   </component>

@@ -51,7 +51,7 @@ public class DashboardController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
         // Order Table Functionality Section
-        /* Currently commended out as it breaks the login screen
+        /* Currently commented out as it breaks the login screen
 
         accountIDColumn.setCellValueFactory(new PropertyValueFactory<>("accountID"));
         deliveryRepIDColumn.setCellValueFactory(new PropertyValueFactory<>("deliveryRepID"));

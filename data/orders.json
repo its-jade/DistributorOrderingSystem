@@ -1,0 +1,24 @@
+{
+  "company": "Acme Distributing",
+  "accountID": "ABCDE12345GH421",
+  "deliveryDate": "01/22/2024",
+  "salesRepID": "SMITHERSJ_57842",
+  "deliveryRepID": "JohnsonT_22345",
+  "items": [
+    {
+      "ID": "031749",
+      "ItemName": "ALG WHITE BEER 12/19.2C",
+      "Quantity": "15"
+    },
+    {
+      "ID": "031752",
+      "ItemName": "ALG WHITE BEER 4/6BTL",
+      "Quantity": "25"
+    },
+    {
+      "ID": "031753",
+      "ItemName": "ALG WHITE BEER 2/12 CANS",
+      "Quantity": "30"
+    }
+  ]
+}

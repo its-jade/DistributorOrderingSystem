@@ -2,7 +2,7 @@ package com.example.distributororderingsystem;
 
 public class Customer {
     private String name;
-    private String address;
+    private String streetAddress;
     private String city;
     private String state;
     private String zipCode;
@@ -13,9 +13,13 @@ public class Customer {
     private String deliveryConstraints;
     private String pointOfContact;
 
-    public Customer(String name, String address, String city, String state, String zipCode, String phoneNumber, String beerLicenseNumber, String paymentMethod, String loadingDockInfo, String deliveryConstraints, String pointOfContact) {
+    public Customer(){}
+
+    public Customer(String name, String streetAddress, String city, String state, String zipCode, String phoneNumber,
+                    String beerLicenseNumber, String paymentMethod, String loadingDockInfo, String deliveryConstraints,
+                    String pointOfContact) {
         this.name = name;
-        this.address = address;
+        this.streetAddress = streetAddress;
         this.city = city;
         this.state = state;
         this.zipCode = zipCode;
@@ -30,8 +34,8 @@ public class Customer {
     // Getters and setters
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
-    public String getAddress() { return address; }
-    public void setAddress(String address) { this.address = address; }
+    public String getStreetAddress() { return streetAddress; }
+    public void setStreetAddress(String streetAddress) { this.streetAddress = streetAddress; }
     public String getCity() { return city; }
     public void setCity(String city) { this.city = city; }
     public String getState() { return state; }
@@ -56,7 +60,7 @@ public class Customer {
     public String toString() {
         return "Customer{" +
                 "name='" + name + '\'' +
-                ", address='" + address + '\'' +
+                ", address='" + streetAddress + '\'' +
                 ", city='" + city + '\'' +
                 ", state='" + state + '\'' +
                 ", zipCode='" + zipCode + '\'' +
@@ -69,7 +73,7 @@ public class Customer {
                 '}';
     }
 
-    @Override
+    /*@Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -77,7 +81,7 @@ public class Customer {
         Customer customer = (Customer) o;
 
         if (!name.equals(customer.name)) return false;
-        if (!address.equals(customer.address)) return false;
+        if (!streetAddress.equals(customer.streetAddress)) return false;
         if (!city.equals(customer.city)) return false;
         if (!state.equals(customer.state)) return false;
         if (!zipCode.equals(customer.zipCode)) return false;
@@ -92,7 +96,7 @@ public class Customer {
     @Override
     public int hashCode() {
         int result = name.hashCode();
-        result = 31 * result + address.hashCode();
+        result = 31 * result + streetAddress.hashCode();
         result = 31 * result + city.hashCode();
         result = 31 * result + state.hashCode();
         result = 31 * result + zipCode.hashCode();
@@ -103,5 +107,7 @@ public class Customer {
         result = 31 * result + deliveryConstraints.hashCode();
         result = 31 * result + pointOfContact.hashCode();
         return result;
-    }
+    }*\
+
+     */
 }

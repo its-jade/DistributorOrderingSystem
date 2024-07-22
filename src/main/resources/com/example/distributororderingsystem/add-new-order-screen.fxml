@@ -113,24 +113,24 @@
                                         <Font size="24.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="10.0" layoutY="258.0" text="Delievery Rep ID:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                                <Label layoutX="10.0" layoutY="258.0" text="Delivery Rep ID:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
                                     <font>
                                         <Font size="24.0" />
                                     </font>
                                 </Label>
-                                <TextField maxHeight="65.0" maxWidth="600.0" minWidth="100.0" style="-fx-background-radius: 15;" GridPane.columnIndex="2">
+                                <TextField fx:id="accountIDField" maxHeight="65.0" maxWidth="600.0" minWidth="100.0" style="-fx-background-radius: 15;" GridPane.columnIndex="2">
                                     <font>
                                         <Font size="18.0" />
                                     </font></TextField>
-                                <TextField maxHeight="65.0" maxWidth="600.0" minWidth="100.0" style="-fx-background-radius: 15;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                <TextField fx:id="deliveryDateField" maxHeight="65.0" maxWidth="600.0" minWidth="100.0" style="-fx-background-radius: 15;" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                     <font>
                                         <Font size="18.0" />
                                     </font></TextField>
-                                <TextField maxHeight="65.0" maxWidth="600.0" minWidth="100.0" style="-fx-background-radius: 15;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                <TextField fx:id="salesRepIDField" maxHeight="65.0" maxWidth="600.0" minWidth="100.0" style="-fx-background-radius: 15;" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                     <font>
                                         <Font size="18.0" />
                                     </font></TextField>
-                                <TextField maxHeight="65.0" maxWidth="600.0" minWidth="100.0" style="-fx-background-radius: 15;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                <TextField fx:id="deliveryRepIDField" maxHeight="65.0" maxWidth="600.0" minWidth="100.0" style="-fx-background-radius: 15;" GridPane.columnIndex="2" GridPane.rowIndex="3">
                                     <font>
                                         <Font size="18.0" />
                                     </font></TextField>
@@ -141,11 +141,11 @@
                                 <Insets bottom="15.0" top="15.0" />
                             </VBox.margin>
                         </Separator>
-                      <TableView>
+                      <TableView fx:id="itemsTableView" >
                           <columns>
-                              <TableColumn prefWidth="136.90896606445312" text="Item ID" />
-                              <TableColumn prefWidth="263.0910339355469" text="Item Name" />
-                              <TableColumn prefWidth="200.0" text="Quantity" />
+                              <TableColumn fx:id="itemIDColumn" prefWidth="136.90896606445312" text="Item ID" />
+                              <TableColumn fx:id="itemNameColumn" prefWidth="263.0910339355469" text="Item Name" />
+                              <TableColumn fx:id="quantityColumn" prefWidth="200.0" text="Quantity" />
                           </columns>
                           <VBox.margin>
                               <Insets bottom="20.0" left="50.0" right="50.0" />
