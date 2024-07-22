@@ -7,8 +7,6 @@ import java.util.List;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -44,23 +42,23 @@ public class AddNewOrderController implements Initializable {
     private TextField deliveryRepIDField;
 
     @FXML
-    private TableView<Item> itemsTableView;
+    private TableView<InventoryItem> itemsTableView;
     @FXML
-    private TableColumn<Item, String> itemIDColumn;
+    private TableColumn<InventoryItem, String> itemIDColumn;
     @FXML
-    private TableColumn<Item, String> itemNameColumn;
+    private TableColumn<InventoryItem, String> itemNameColumn;
     @FXML
-    private TableColumn<Item, Integer> quantityColumn;
+    private TableColumn<InventoryItem, Integer> quantityColumn;
 
-    private final ObservableList<Item> itemList = FXCollections.observableArrayList();
+    private ObservableList<InventoryItem> itemList = FXCollections.observableArrayList();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        itemIDColumn.setCellValueFactory(new PropertyValueFactory<>("itemID"));
-        itemNameColumn.setCellValueFactory(new PropertyValueFactory<>("itemName"));
-        quantityColumn.setCellValueFactory(new PropertyValueFactory<>("quantity"));
-
+        itemIDColumn.setCellValueFactory(new PropertyValueFactory<>("productID"));
+        itemNameColumn.setCellValueFactory(new PropertyValueFactory<>("brandName"));
+        quantityColumn.setCellValueFactory(new PropertyValueFactory<>("onHand"));
+        itemList = FXCollections.observableArrayList(InventoryItemsList.generateInventoryItems());
         itemsTableView.setItems(itemList);
 
         customerListButton.setOnAction(event -> {
@@ -120,61 +118,13 @@ public class AddNewOrderController implements Initializable {
         String salesRepID = salesRepIDField.getText();
         String deliveryRepID = deliveryRepIDField.getText();
 
-        Order newOrder = new Order(accountID, deliveryDate, salesRepID, deliveryRepID, new ArrayList<>(itemList));
+        Order newOrder;
+        newOrder = new Order(accountID, deliveryDate, salesRepID, deliveryRepID, new ArrayList<>(itemList));
 
         // Save the order to the desired location (e.g., database, file, etc.)
         // For now, let's print it to the console to confirm
         System.out.println(newOrder);
     }
 
-    public static class Item {
-        private final String itemID;
-        private final String itemName;
-        private final int quantity;
 
-        public Item(String itemID, String itemName, int quantity) {
-            this.itemID = itemID;
-            this.itemName = itemName;
-            this.quantity = quantity;
-        }
-
-        public String getItemID() {
-            return itemID;
-        }
-
-        public String getItemName() {
-            return itemName;
-        }
-
-        public int getQuantity() {
-            return quantity;
-        }
-    }
-
-    public static class Order {
-        private final String accountID;
-        private final String deliveryDate;
-        private final String salesRepID;
-        private final String deliveryRepID;
-        private final List<Item> items;
-
-        public Order(String accountID, String deliveryDate, String salesRepID, String deliveryRepID, List<Item> items) {
-            this.accountID = accountID;
-            this.deliveryDate = deliveryDate;
-            this.salesRepID = salesRepID;
-            this.deliveryRepID = deliveryRepID;
-            this.items = items;
-        }
-
-        @Override
-        public String toString() {
-            return "Order{" +
-                    "accountID='" + accountID + '\'' +
-                    ", deliveryDate='" + deliveryDate + '\'' +
-                    ", salesRepID='" + salesRepID + '\'' +
-                    ", deliveryRepID='" + deliveryRepID + '\'' +
-                    ", items=" + items +
-                    '}';
-        }
-    }
 }
